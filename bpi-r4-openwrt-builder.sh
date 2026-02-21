@@ -6,6 +6,8 @@ rm -rf mtk-openwrt-feeds
 
 git clone --depth 1 --branch v24.10.5 https://git.openwrt.org/openwrt/openwrt.git openwrt
 cd openwrt
+git config user.email "builder@openwrt-build"
+git config user.name "OpenWrt Builder"
 git fetch --depth 100 origin openwrt-24.10
 git cherry-pick 5774c8b316eff80070775ee695d998ad3ee828d1	#mediatek: add Motorcomm PHY support to Cudy AP3000 v1
 cd -
