@@ -9,6 +9,9 @@ cd openwrt
 git config user.email "builder@openwrt-build"
 git config user.name "OpenWrt Builder"
 git fetch --depth 100 origin openwrt-24.10
+git cherry-pick 67294cb751b0f3809383631b4133aa9dfd2e9d3e	#kernel: bump 6.6 to 6.6.120
+git cherry-pick 18771e11c926d7c7b21d8b8ecfc2485a65760ce4	#kernel: bump 6.6 to 6.6.121
+git cherry-pick 08106add9c6ee3e72f46c948ed7a87360835a389	#kernel: bump 6.6 to 6.6.122
 git cherry-pick 5774c8b316eff80070775ee695d998ad3ee828d1	#mediatek: add Motorcomm PHY support to Cudy AP3000 v1
 cd -
 
