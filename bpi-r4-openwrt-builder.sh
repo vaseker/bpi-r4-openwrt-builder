@@ -10,10 +10,10 @@ git clone --branch master https://git01.mediatek.com/openwrt/feeds/mtk-openwrt-f
 cd mtk-openwrt-feeds; git checkout e39de5680a2e945a6d420e9f9f95cef8d4f99506; cd -;	#[openwrt-24][MAC80211][WiFi7][Update MP4.2 critical patches]
 
 ### wireless-regdb modification - this remove all regdb wireless countries restrictions
-#rm -rf openwrt/package/firmware/wireless-regdb/patches/*.*
-#rm -rf mtk-openwrt-feeds/autobuild/unified/filogic/mac80211/24.10/files/package/firmware/wireless-regdb/patches/*.*
-#\cp -r my_files/500-tx_power.patch mtk-openwrt-feeds/autobuild/unified/filogic/mac80211/24.10/files/package/firmware/wireless-regdb/patches
-#\cp -r my_files/regdb.Makefile openwrt/package/firmware/wireless-regdb/Makefile
+rm -rf openwrt/package/firmware/wireless-regdb/patches/*.*
+rm -rf mtk-openwrt-feeds/autobuild/unified/filogic/mac80211/24.10/files/package/firmware/wireless-regdb/patches/*.*
+\cp -r my_files/500-tx_power.patch mtk-openwrt-feeds/autobuild/unified/filogic/mac80211/24.10/files/package/firmware/wireless-regdb/patches
+\cp -r my_files/regdb.Makefile openwrt/package/firmware/wireless-regdb/Makefile
 
 rm -rf mtk-openwrt-feeds/24.10/patches-feeds/108-strongswan-add-uci-support.patch
 
