@@ -7,7 +7,7 @@ rm -rf mtk-openwrt-feeds
 git clone --depth 1 --branch v24.10.5 https://git.openwrt.org/openwrt/openwrt.git openwrt
 
 git clone --branch master https://git01.mediatek.com/openwrt/feeds/mtk-openwrt-feeds
-cd mtk-openwrt-feeds; git checkout e39de5680a2e945a6d420e9f9f95cef8d4f99506; cd -;	#[openwrt-24][MAC80211][WiFi7][Update MP4.2 critical patches]
+cd mtk-openwrt-feeds; git checkout bb7377e9a9b4691820957bd1a891db89ad85858c; cd -;	#[kernel-6.6][common][eth] last commit with 999-3014 patch compatible with kernel 6.6.119
 
 ### wireless-regdb modification - this remove all regdb wireless countries restrictions
 rm -rf openwrt/package/firmware/wireless-regdb/patches/*.*
